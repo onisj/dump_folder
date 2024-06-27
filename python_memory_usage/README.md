@@ -39,7 +39,7 @@ Generators find wide applicability across various domains:
 
 In the example below, I show how `generators` perform better than `list` expressions.
 
-![inmem_proc.jpg](../images/inmem_proc.JPG)
+![inmem_proc](./images/inmem_proc.JPG)
 
 
 ### **List:**
@@ -53,7 +53,7 @@ In the example below, I show how `generators` perform better than `list` express
 
 The following is a break down of what the `**inmem_proc.py**` script does step-by-step:
 
-### 1. Importing Necessary Modules
+#### 1. Importing Necessary Modules
 
 I start by importing the tools I need:
 
@@ -68,7 +68,7 @@ import time
 
 ```
 
-### 2. Getting Memory Usage
+#### 2. Getting Memory Usage
 
 I have a function that tells me how much memory (RAM) my program is using. It converts this number from bytes (very small units) to megabytes (MiB, which are bigger and easier to understand).
 
@@ -79,7 +79,7 @@ def get_memory_usage():
 
 ```
 
-### 3. Getting CPU Times
+#### 3. Getting CPU Times
 
 This function tells me how much time the CPU (the brain of the computer) spends working on my program.
 
@@ -90,7 +90,7 @@ def get_cpu_times():
 
 ```
 
-### 4. Main Part of Our Program
+#### 4. Main Part of Our Program
 
 Here’s where I do the main work of the program. In this case, I'm creating a big list of numbers (squares of numbers from 0 to 99,999,999) and then adding them all up.
 
@@ -101,7 +101,7 @@ def main():
 ```
 
 
-### 5. Running and Measuring the Program
+#### 5. Running and Measuring the Program
 
 Now, I put everything together:
 
@@ -120,7 +120,8 @@ if __name__ == "__main__":
 ```
 
 
-### 6. Running the Main Work
+#### 6. Running the Main Work
+
 I then run the main part of our program.
 
 ```python
@@ -129,7 +130,7 @@ I then run the main part of our program.
 ```
 
 
-### 7. Checking Usage After Running
+#### 7. Checking Usage After Running
 
 After running the main work, I check the memory, CPU times, and clock time again.
 
@@ -141,7 +142,7 @@ After running the main work, I check the memory, CPU times, and clock time again
 ```
 
 
-### 8. Calculating and Printing the Results
+#### 8. Calculating and Printing the Results
 
 I calculate how much memory was used, how much CPU time was used, and how much total time passed. Then I print these results.
 
@@ -157,7 +158,7 @@ I calculate how much memory was used, how much CPU time was used, and how much t
 ```
 
 
-### Summary
+#### Summary
 
 - I start by noting how much memory and CPU time we're using.
 - I do some heavy computation (squaring numbers and summing them up).
@@ -169,7 +170,7 @@ I calculate how much memory was used, how much CPU time was used, and how much t
 
 ### **Generator Expression:**
 
-![stream_proc](../images/stream_proc.JPG)
+![stream_proc](./images/stream_proc.JPG)
 
 
 - **Definition:** A generator expression (or generator) produces items one at a time and only when needed.
@@ -206,7 +207,7 @@ print(sum(b))
 - **Time:** While it might take a bit longer to generate each number on the fly, the overall time can be less due to the reduced memory management overhead.
 
 
-### **Summary**
+#### **Summary**
 
 - **Memory Efficiency:** Generators are much more memory efficient than lists for large datasets because they don't store all elements in memory at once.
 
