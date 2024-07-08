@@ -9,12 +9,12 @@ Imagine you have a list of elements in Python and want to group them; how do you
 - In-memory SQL (SQLite/duckdb, etc.)
 - Custom implementation with functions
 
-Fortunately, Python offers powerful standard libraries that can simplify this task. Enter `**itertools**` and `**more-itertools**`. If you are primarily developing in Python, go through these libraries to understand their capabilities for data manipulation.
+Fortunately, Python offers powerful standard libraries that can simplify this task. Enter **`itertools`** and **`more-itertools`**. If you are primarily developing in Python, go through these libraries to understand their capabilities for data manipulation.
 
 
 ## **Example: Grouping Data with itertools.groupby**
 
-Shown below is a simple example for `**groupby**` in Python.
+Shown below is a simple example for **`groupby`** in Python.
 
 ### **Code Explanation**
 This script demonstrates how to group data using Python's groupby from the itertools module.
@@ -56,7 +56,7 @@ from pprint import pprint
 
 ```
 
-This imports `**groupby**` from the `**itertools**` module for grouping and `**pprint**` fom the `**pprint**` module for prining the grouped data in a readable format.
+This imports **`groupby`** from the **`itertools`** module for grouping and **`pprint`** fom the **`pprint`** module for prining the grouped data in a readable format.
 
 2. **Sample Data:**
 
@@ -81,7 +81,7 @@ data.sort(key=lambda x: x[0])
 
 ```
 
-This sorts the data by the first element of each tuple to ensure `**groupby**` works correctly. `**groupby**` requires the data to be sorted by the key you want to group by.
+This sorts the data by the first element of each tuple to ensure **`groupby`** works correctly. **`groupby`** requires the data to be sorted by the key you want to group by.
 
 4. **Group Data:**
 
@@ -120,9 +120,3 @@ This example demonstrates how to use itertools.groupby to group data by a specif
 
 
 ---
-
-
-
-
-
-
